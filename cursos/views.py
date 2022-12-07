@@ -49,7 +49,7 @@ def index(request):
     curso_lavado_activos.curso_precio = 'Gratuito'
     curso_lavado_activos.curso_vigencia = 1
     curso_lavado_activos.curso_enlace_externo = 'https://drive.google.com/file/d/1uZQsK1dXJcLiuSfqxV1jRzcAxqLgTXRr/view?usp=share_link'
-    curso_lavado_activos.curso_enlace_evaluacion = '#'
+    curso_lavado_activos.curso_enlace_evaluacion = 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhEIRB5oVURjAxVFBMSTVFTjFHT01ISlRBTUdENFNSRi4u'
 
     cursos = [curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos, curso_lavado_activos]
 
