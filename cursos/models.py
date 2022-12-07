@@ -10,3 +10,4 @@ class Curso:
     curso_precio: str
     curso_vigencia: int
     curso_enlace_externo: str
+    curso_enlace_evaluacion: str

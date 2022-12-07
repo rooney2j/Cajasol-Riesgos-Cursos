@@ -204,6 +204,10 @@
 									{% if curso.curso_vigencia == 1 %}
 									<div class="spec_offer text-center"><a href="#">Vigente</a></div>
 									{% endif %}
+
+									{% if curso.curso_vigencia == 0 %}
+									<div class="spec_offer text-center"><a href="#">Caducado</a></div>
+									{% endif %}
 								</div>
 								<div class="destination_content">
 									<div class="destination_title"><a href="{{curso.curso_enlace_externo}}">{{curso.curso_nombre}}</a>
@@ -213,7 +217,12 @@
 									</div>
 									<!--div class="destination_price">{{curso.curso_precio}}</div-->
 								</div>
+
+								<a href="{{curso.curso_enlace_evaluacion}}" target="_blank" class="btn btn-primary">Evaluación</a>
+
 							</div>
+
+
 
 							{% endfor %}
 
