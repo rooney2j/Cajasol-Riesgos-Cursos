@@ -43,12 +43,12 @@ def index(request):
     curso_identificacion_peligros_riesgos.curso_enlace_externo = 'https://docs.google.com/presentation/d/1GmjrJhMBMCO-SfJfX6BwZmGhAgQlwIex/edit?usp=sharing&ouid=100483376780757384486&rtpof=true&sd=true'
     curso_identificacion_peligros_riesgos.curso_enlace_evaluacion = '#'
 
-    curso_lavado_activos.curso_nombre = 'Lavado de Activos'
+    curso_lavado_activos.curso_nombre = 'Lavado de Activos (Hasta 26/12/2022)'
     curso_lavado_activos.curso_imagen = 'curso_lavado_activos.jpg'
     curso_lavado_activos.curso_descripcion = 'Incluye examen'
     curso_lavado_activos.curso_precio = 'Gratuito'
     curso_lavado_activos.curso_vigencia = 1
-    curso_lavado_activos.curso_enlace_externo = 'https://drive.google.com/file/d/1uZQsK1dXJcLiuSfqxV1jRzcAxqLgTXRr/view?usp=share_link'
+    curso_lavado_activos.curso_enlace_externo = 'https://drive.google.com/file/d/1b2CIuIDuMN7PQE0HBOG8ahkEJdmzuqFP/view?usp=sharing'
     curso_lavado_activos.curso_enlace_evaluacion = 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhEIRB5oVURjAxVFBMSTVFTjFHT01ISlRBTUdENFNSRi4u'
 
     cursos = [curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos, curso_lavado_activos]
