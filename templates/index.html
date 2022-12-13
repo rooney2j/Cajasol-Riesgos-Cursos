@@ -218,7 +218,9 @@
 									<!--div class="destination_price">{{curso.curso_precio}}</div-->
 								</div>
 
+								{% if curso.curso_vigencia == 1 %}
 								<a href="{{curso.curso_enlace_evaluacion}}" target="_blank" class="btn btn-primary">Evaluación</a>
+								{% endif %}
 
 							</div>
 
