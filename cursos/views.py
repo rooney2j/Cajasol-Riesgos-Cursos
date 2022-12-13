@@ -48,9 +48,9 @@ def index(request):
     curso_lavado_activos.curso_descripcion = 'Incluye examen'
     curso_lavado_activos.curso_precio = 'Gratuito'
     curso_lavado_activos.curso_vigencia = 1
-    curso_lavado_activos.curso_enlace_externo = 'https://drive.google.com/file/d/1b2CIuIDuMN7PQE0HBOG8ahkEJdmzuqFP/view?usp=sharing'
+    curso_lavado_activos.curso_enlace_externo = 'https://drive.google.com/file/d/1DmzgMyYsugZyKf_y9yvm3HNSCGYLaq-T/view?usp=sharing'
     curso_lavado_activos.curso_enlace_evaluacion = 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhEIRB5oVURjAxVFBMSTVFTjFHT01ISlRBTUdENFNSRi4u'
 
-    cursos = [curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos, curso_lavado_activos]
+    cursos = [curso_lavado_activos, curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos]
 
     return render(request, 'index.html', {'cursos': cursos})
