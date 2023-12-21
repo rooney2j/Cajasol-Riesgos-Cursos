@@ -57,8 +57,8 @@ def index(request):
     curso_lavado_activos_2023.curso_descripcion = 'Incluye examen'
     curso_lavado_activos_2023.curso_precio = 'Gratuito'
     curso_lavado_activos_2023.curso_vigencia = 1
-    curso_lavado_activos_2023.curso_enlace_externo = 'https://docs.google.com/presentation/d/1KiSuNXz3SQMTXO0jDsnqqESV7SSwc0iH/edit?usp=sharing&ouid=100483376780757384486&rtpof=true&sd=true'
-    curso_lavado_activos_2023.curso_enlace_evaluacion = 'https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhEIRB5oVUQVVGWTdJS0M1RUZYWUJMUTQ0WUtTRE9SWi4u&preview=%257B%2522ViewModeIndex%2522%3A1%257D'
+    curso_lavado_activos_2023.curso_enlace_externo = 'https://drive.google.com/file/d/12bbDbAqjy342rxHYaKfoJxNJVqWEOm00/view?usp=sharing'
+    curso_lavado_activos_2023.curso_enlace_evaluacion = 'https://forms.office.com/r/V3EztZ2p82?origin=lprLink'
 
     cursos = [curso_lavado_activos_2023, curso_lavado_activos, curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos]
 
