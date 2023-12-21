@@ -10,6 +10,7 @@ def index(request):
     curso_sismos = Curso()
     curso_identificacion_peligros_riesgos = Curso()
     curso_lavado_activos = Curso()
+    curso_lavado_activos_2023 = Curso()
 
     curso_ergonomia.curso_nombre = 'Ergonomía'
     curso_ergonomia.curso_imagen = 'curso_ergonomia.jpg'
@@ -43,14 +44,22 @@ def index(request):
     curso_identificacion_peligros_riesgos.curso_enlace_externo = 'https://docs.google.com/presentation/d/1GmjrJhMBMCO-SfJfX6BwZmGhAgQlwIex/edit?usp=sharing&ouid=100483376780757384486&rtpof=true&sd=true'
     curso_identificacion_peligros_riesgos.curso_enlace_evaluacion = '#'
 
-    curso_lavado_activos.curso_nombre = 'Lavado de Activos (Hasta 26/12/2022)'
+    curso_lavado_activos.curso_nombre = 'Lavado de Activos (2022)'
     curso_lavado_activos.curso_imagen = 'curso_lavado_activos.jpg'
     curso_lavado_activos.curso_descripcion = 'Incluye examen'
     curso_lavado_activos.curso_precio = 'Gratuito'
-    curso_lavado_activos.curso_vigencia = 1
+    curso_lavado_activos.curso_vigencia = 0
     curso_lavado_activos.curso_enlace_externo = 'https://drive.google.com/file/d/1DmzgMyYsugZyKf_y9yvm3HNSCGYLaq-T/view?usp=sharing'
     curso_lavado_activos.curso_enlace_evaluacion = 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhEIRB5oVURjAxVFBMSTVFTjFHT01ISlRBTUdENFNSRi4u'
+    
+    curso_lavado_activos_2023.curso_nombre = 'Lavado de Activos (Diciembre 2023)'
+    curso_lavado_activos_2023.curso_imagen = 'curso_lavado_activos_2023.jpg'
+    curso_lavado_activos_2023.curso_descripcion = 'Incluye examen'
+    curso_lavado_activos_2023.curso_precio = 'Gratuito'
+    curso_lavado_activos_2023.curso_vigencia = 1
+    curso_lavado_activos_2023.curso_enlace_externo = 'https://docs.google.com/presentation/d/1KiSuNXz3SQMTXO0jDsnqqESV7SSwc0iH/edit?usp=sharing&ouid=100483376780757384486&rtpof=true&sd=true'
+    curso_lavado_activos_2023.curso_enlace_evaluacion = 'https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhEIRB5oVUQVVGWTdJS0M1RUZYWUJMUTQ0WUtTRE9SWi4u&preview=%257B%2522ViewModeIndex%2522%3A1%257D'
 
-    cursos = [curso_lavado_activos, curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos]
+    cursos = [curso_lavado_activos_2023, curso_lavado_activos, curso_ergonomia, curso_accidentes_de_trabajo, curso_sismos, curso_identificacion_peligros_riesgos]
 
     return render(request, 'index.html', {'cursos': cursos})
